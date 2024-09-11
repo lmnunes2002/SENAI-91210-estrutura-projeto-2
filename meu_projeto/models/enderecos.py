@@ -1,7 +1,6 @@
-from abc import ABC
 from models.enums.unidade_federativa import Unidadefederativa
 
-class Endereco(ABC):
+class Endereco:
     def __init__(self, logradouro: str, numero: str, complemento: str, cep: str, cidade: str, uf: Unidadefederativa) -> None:
         self.logradouro = logradouro
         self.numero = numero
